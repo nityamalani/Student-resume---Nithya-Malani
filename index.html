@@ -1,0 +1,1050 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nithya Malani | Portfolio</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+      :root {
+        --navy: #172638;
+        --blue: #b8ddf0;
+        --sky: #d6ebf5;
+        --ice: #eaf4f8;
+        --cream: #f7f7f4;
+        --muted: #637383;
+        --line: rgba(23, 38, 56, 0.15);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 100px;
+      }
+
+      body {
+        background: var(--cream);
+        color: var(--navy);
+        font-family: "DM Sans", sans-serif;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* NAVIGATION */
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(247, 247, 244, 0.94);
+        backdrop-filter: blur(15px);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .navbar {
+        width: 90%;
+        max-width: 1400px;
+        margin: auto;
+        min-height: 76px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .logo {
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+        font-size: 15px;
+        letter-spacing: 2px;
+        white-space: nowrap;
+      }
+
+      .logo span {
+        color: #77a9c4;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+      }
+
+      .nav-links a {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        color: var(--muted);
+        transition: 0.2s;
+      }
+
+      .nav-links a:hover {
+        color: var(--navy);
+      }
+
+      /* GENERAL */
+
+      .container {
+        width: 90%;
+        max-width: 1180px;
+        margin: auto;
+      }
+
+      section {
+        padding: 105px 0;
+      }
+
+      .eyebrow {
+        font-size: 11px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #719bb3;
+        margin-bottom: 22px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Manrope", sans-serif;
+      }
+
+      h1 {
+        font-size: clamp(52px, 9vw, 115px);
+        line-height: 0.94;
+        letter-spacing: -6px;
+        margin-bottom: 28px;
+      }
+
+      h2 {
+        font-size: clamp(35px, 5vw, 65px);
+        line-height: 1.05;
+        letter-spacing: -3px;
+        margin-bottom: 25px;
+      }
+
+      h3 {
+        font-size: 21px;
+        margin-bottom: 12px;
+      }
+
+      .outline {
+        color: transparent;
+        -webkit-text-stroke: 1.5px var(--navy);
+      }
+
+      .lead {
+        color: var(--muted);
+        font-size: 19px;
+        line-height: 1.7;
+        max-width: 650px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 16px 22px;
+        border: 1px solid var(--navy);
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        font-weight: 700;
+        transition: 0.25s;
+      }
+
+      .btn:hover {
+        background: var(--blue);
+        transform: translateY(-3px);
+      }
+
+      .btn-dark {
+        background: var(--navy);
+        color: white;
+      }
+
+      .btn-dark:hover {
+        color: var(--navy);
+      }
+
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 35px;
+      }
+
+      /* HOME */
+
+      .hero {
+        min-height: 88vh;
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        align-items: center;
+        gap: 50px;
+        padding-top: 65px;
+        padding-bottom: 65px;
+      }
+
+      .hero-image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 550px;
+      }
+
+      .portrait {
+        width: 90%;
+        max-width: 450px;
+        height: 570px;
+        object-fit: cover;
+        object-position: center 15%;
+        background: var(--blue);
+        border-radius: 48% 48% 10px 10px;
+        mix-blend-mode: multiply;
+      }
+
+      .image-label {
+        position: absolute;
+        bottom: 55px;
+        right: 0;
+        background: var(--navy);
+        color: white;
+        border-radius: 50%;
+        padding: 24px 20px;
+        font-size: 10px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 1px;
+      }
+
+      /* INTRO */
+
+      .blue-section {
+        background: var(--ice);
+      }
+
+      .intro-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+        align-items: end;
+      }
+
+      .small-text {
+        color: var(--muted);
+        line-height: 1.8;
+        font-size: 15px;
+      }
+
+      /* CARDS */
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 45px;
+      }
+
+      .card {
+        background: white;
+        padding: 30px;
+        border: 1px solid var(--line);
+        min-height: 220px;
+        transition: 0.25s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(23, 38, 56, 0.08);
+      }
+
+      .card-number {
+        color: #80adc6;
+        font-size: 12px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        margin-bottom: 45px;
+      }
+
+      .card p {
+        color: var(--muted);
+        line-height: 1.7;
+        font-size: 14px;
+      }
+
+      /* ABOUT */
+
+      .about-layout {
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 90px;
+        align-items: center;
+      }
+
+      .hanging-photo {
+        width: 230px;
+        margin: 50px auto 20px;
+        transform-origin: top center;
+        animation: swing 5s ease-in-out infinite;
+        position: relative;
+      }
+
+      .hanging-photo:before {
+        content: "";
+        position: absolute;
+        height: 55px;
+        border-left: 2px solid #80adc6;
+        top: -55px;
+        left: 50%;
+      }
+
+      .hanging-photo img {
+        width: 100%;
+        border: 8px solid white;
+        box-shadow: 0 10px 30px rgba(23, 38, 56, 0.12);
+      }
+
+      .hanging-photo:hover {
+        animation-play-state: paused;
+        transform: rotate(7deg);
+      }
+
+      @keyframes swing {
+        0%,
+        100% {
+          transform: rotate(-3deg);
+        }
+        50% {
+          transform: rotate(3deg);
+        }
+      }
+
+      /* TIMELINE */
+
+      .timeline {
+        border-top: 1px solid var(--line);
+      }
+
+      .timeline-item {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 35px;
+        padding: 30px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .date {
+        color: #719bb3;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+      }
+
+      .timeline-item p {
+        color: var(--muted);
+        line-height: 1.8;
+        font-size: 14px;
+        max-width: 750px;
+      }
+
+      /* PROJECTS */
+
+      .project-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .project {
+        min-height: 300px;
+        background: var(--navy);
+        color: white;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .project:nth-child(2) {
+        background: #c6e2ef;
+        color: var(--navy);
+      }
+
+      .project:nth-child(3) {
+        background: #e9e5db;
+        color: var(--navy);
+      }
+
+      .project:nth-child(4) {
+        background: #d6ebf5;
+        color: var(--navy);
+      }
+
+      .project p {
+        font-size: 14px;
+        line-height: 1.8;
+        max-width: 450px;
+        opacity: 0.85;
+      }
+
+      .project h3 {
+        font-size: 32px;
+        letter-spacing: -1px;
+      }
+
+      /* SKILLS */
+
+      .skill-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .skill-box {
+        background: white;
+        padding: 30px;
+        border: 1px solid var(--line);
+      }
+
+      .skill-box p {
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.9;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+      }
+
+      .tag {
+        padding: 10px 15px;
+        border: 1px solid var(--line);
+        border-radius: 30px;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      /* CONTACT & FOOTER */
+
+      .dark-section {
+        background: var(--navy);
+        color: white;
+      }
+
+      .dark-section .lead {
+        color: #c3d1db;
+      }
+
+      .dark-section .eyebrow {
+        color: var(--blue);
+      }
+
+      footer {
+        background: var(--navy);
+        color: white;
+        padding: 45px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+      }
+
+      footer p {
+        color: #b8c8d3;
+        font-size: 12px;
+        margin-top: 10px;
+      }
+
+      /* MOBILE */
+
+      @media (max-width: 850px) {
+        .navbar {
+          flex-direction: column;
+          justify-content: center;
+          padding: 16px 0;
+        }
+
+        .nav-links {
+          justify-content: center;
+          gap: 15px;
+        }
+
+        .hero {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-image {
+          grid-row: 1;
+          min-height: 420px;
+        }
+
+        .portrait {
+          height: 430px;
+          max-width: 350px;
+        }
+
+        .intro-grid,
+        .about-layout {
+          grid-template-columns: 1fr;
+          gap: 35px;
+        }
+
+        .cards {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 560px) {
+        section {
+          padding: 75px 0;
+        }
+
+        .nav-links {
+          gap: 12px;
+        }
+
+        .nav-links a {
+          font-size: 9px;
+        }
+
+        h1 {
+          letter-spacing: -3px;
+        }
+
+        .hero {
+          padding-top: 35px;
+        }
+
+        .hero-image {
+          min-height: 350px;
+        }
+
+        .portrait {
+          height: 350px;
+          width: 85%;
+        }
+
+        .buttons {
+          display: grid;
+        }
+
+        .btn {
+          text-align: center;
+        }
+
+        .cards,
+        .project-grid,
+        .skill-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .timeline-item {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+
+        .footer-content {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#home" class="logo">NITHYA <span>MALANI</span></a>
+
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HOME -->
+
+    <section id="home">
+      <div class="container hero">
+        <div>
+          <div class="eyebrow">Entrepreneurship · Curiosity · Execution</div>
+
+          <h1>
+            Ideas are<br />
+            <span class="outline">only the</span><br />
+            beginning.
+          </h1>
+
+          <p class="lead">
+            I'm Nithya — interested in the people, questions and small
+            experiments that turn promising ideas into something real.
+          </p>
+
+          <div class="buttons">
+            <a href="#projects" class="btn btn-dark">SEE MY WORK ↗</a>
+
+            <a href="./Nithya_Malani_Founders_Office_Resume_Final.docx" target="_blank" class="btn">
+              SEE MY RESUME ↗
+            </a>
+
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrkVbcHPLntlCKPnMkhhzTNVRmHfRHbHfsFqnMPgswXrlxpRNrxwljsCzNGHPzNKDXDxQV" class="btn">
+            
+              EMAIL ME ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="IMG_1076.JPG" alt="Nithya Malani" class="portrait" />
+
+          <div class="image-label">
+            CURRENTLY<br />
+            LEARNING &<br />
+            BUILDING
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+
+    <section class="blue-section">
+      <div class="container">
+        <div class="intro-grid">
+          <div>
+            <div class="eyebrow">A little context</div>
+
+            <h2>
+              Curious by nature.<br />
+              Practical by design.
+            </h2>
+          </div>
+
+          <p class="small-text">
+            From an accessibility-focused prototype to student leadership and
+            editorial work, I enjoy taking an idea, asking better questions and
+            figuring out what comes next. I'm particularly interested in how
+            businesses are built, how people work together and how ideas develop
+            into something useful.
+          </p>
+        </div>
+
+        <div class="cards">
+          <a href="#about" class="card">
+            <div class="card-number">01 / ABOUT</div>
+            <h3>What I'm curious about</h3>
+            <p>
+              My interests, background and the experiences that have shaped how
+              I think.
+            </p>
+          </a>
+
+          <a href="#experience" class="card">
+            <div class="card-number">02 / EXPERIENCE</div>
+            <h3>Where I've contributed</h3>
+            <p>Leadership, collaboration and taking responsibility.</p>
+          </a>
+
+          <a href="#projects" class="card">
+            <div class="card-number">03 / PROJECTS</div>
+            <h3>What I've worked on</h3>
+            <p>Ideas explored through prototyping, writing and presenting.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+      <div class="container about-layout">
+        <div>
+          <div class="hanging-photo">
+            <img src="IMG_2807.JPG" alt="Portrait of Nithya" />
+          </div>
+
+          <div class="eyebrow" style="text-align: center">Nithya Malani</div>
+        </div>
+
+        <div>
+          <div class="eyebrow">01 / About me</div>
+
+          <h2>Interested in how things come together.</h2>
+
+          <p class="lead">
+            I've grown up around entrepreneurship, and that has made me curious
+            about how businesses take shape.
+          </p>
+
+          <br />
+
+          <p class="small-text">
+            Through developing an accessibility-focused prototype, contributing
+            to student leadership and producing editorial content, I've started
+            exploring how ideas move from concept to execution.
+            <br /><br />
+            I enjoy brainstorming, making things, communicating clearly and
+            working with people who bring different perspectives.
+            <br /><br />
+            Outside that, I'm interested in football, biology and chemistry,
+            singing, reading and analytical puzzles.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+
+    <section id="education" class="blue-section">
+      <div class="container">
+        <div class="eyebrow">02 / Education</div>
+
+        <h2>Learning is never<br />just in class.</h2>
+
+        <p class="lead">
+          A foundation in school, with a current focus on digital business and
+          entrepreneurship.
+        </p>
+
+        <br /><br />
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="date">SEP 2026 — PRESENT</div>
+            <div>
+              <h3>Indian Institute of Management Bangalore</h3>
+              <p>Digital Business and Entrepreneurship</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="date">AUG 2026 — PRESENT</div>
+            <div>
+              <h3>Bower School of Entrepreneurship</h3>
+              <p>Entrepreneurship education</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="date">APR 2018 — JUN 2026</div>
+            <div>
+              <h3>The Hyderabad Public School, Begumpet</h3>
+              <p>
+                Class XII: 94% ISC Board<br />
+                Class X: 92% ICSE Board
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+
+    <section id="experience">
+      <div class="container">
+        <div class="eyebrow">03 / Experience & leadership</div>
+
+        <h2>Good work is<br />rarely solo work.</h2>
+
+        <p class="lead">
+          A selection of experiences built around collaboration, communication
+          and taking responsibility.
+        </p>
+
+        <br /><br />
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="date">STUDENT COUNCIL</div>
+            <div>
+              <h3>House Prefect</h3>
+              <p>
+                Represented a house of 800+ students and co-organised around two
+                dozen intra-school sporting and co-curricular events. Supported
+                events involving at least four house teams within a 16-team
+                field.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="date">EDITORIAL BOARD</div>
+            <div>
+              <h3>Shaheen School Magazine</h3>
+              <p>
+                Wrote 10–15 articles and edited 20 articles or pages for the
+                annual school magazine. Collaborated with a five-person team,
+                including a teacher, on editorial production.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="date">ROUND SQUARE · OXFORD</div>
+            <div>
+              <h3>International Conference — Big Baraza</h3>
+              <p>
+                Delivered a keynote-style speech on how small communities can
+                create wider impact to an estimated 85–100 attendees at a
+                conference representing 30+ countries. Participated in debates
+                and discussions in the Oxford Debate Chamber.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="date">AFS NATIONAL MEET</div>
+            <div>
+              <h3>Sustainability & Culture Presentation</h3>
+              <p>
+                Presented on sustainability and the culture of the represented
+                state to an audience of 80; the wider event had approximately
+                100 attendees.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="date">BOWER 2035</div>
+            <div>
+              <h3>Panel Discussion</h3>
+              <p>
+                Contributed to a six-person panel discussing the future of
+                education and the skills students should develop.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects" class="blue-section">
+      <div class="container">
+        <div class="eyebrow">04 / Selected work</div>
+
+        <h2>From a rough idea<br />to a real attempt.</h2>
+
+        <p class="lead">
+          A few projects and conversations where I've explored problems, tested
+          concepts and shared a point of view.
+        </p>
+
+        <br /><br />
+
+        <div class="project-grid">
+          <div class="project">
+            <div class="eyebrow">01 / AFS STEM GLOBAL ACCELERATOR</div>
+            <div>
+              <h3>Accessibility prototype</h3>
+              <p>
+                Developed a concept for an AI-powered wearable waistband
+                intended to help visually impaired users detect obstacles.
+                Completed two iterations over two weeks and built a physical
+                prototype focused on obstacle detection, sustainability and
+                convenience. The prototype was not user-tested.
+              </p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="eyebrow">02 / EDITORIAL</div>
+            <div>
+              <h3>Shaheen School Magazine</h3>
+              <p>
+                Wrote 10–15 articles and edited 20 articles or pages,
+                collaborating with a five-person team on the annual school
+                magazine.
+              </p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="eyebrow">03 / PUBLIC SPEAKING</div>
+            <div>
+              <h3>Big Baraza at Oxford</h3>
+              <p>
+                Delivered a keynote-style speech on how small communities can
+                create wider impact at an international conference representing
+                30+ countries.
+              </p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="eyebrow">04 / PANEL DISCUSSION</div>
+            <div>
+              <h3>Bower 2035</h3>
+              <p>
+                Contributed to a panel discussion on the future of education and
+                the skills students should develop.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+      <div class="container">
+        <div class="eyebrow">05 / Skills & learning</div>
+
+        <h2>A tool kit still<br />in progress.</h2>
+
+        <p class="lead">
+          A mix of communication, coordination, creative problem-solving and
+          business foundations.
+        </p>
+
+        <br /><br />
+
+        <div class="skill-grid">
+          <div class="skill-box">
+            <h3>Problem-solving & development</h3>
+            <div class="tags">
+              <span class="tag">Brainstorming</span>
+              <span class="tag">Prototyping</span>
+              <span class="tag">Idea development</span>
+              <span class="tag">Creative problem-solving</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h3>Communication</h3>
+            <div class="tags">
+              <span class="tag">Public speaking</span>
+              <span class="tag">Presentations</span>
+              <span class="tag">Debate</span>
+              <span class="tag">Writing</span>
+              <span class="tag">Editing</span>
+              <span class="tag">Cross-cultural communication</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h3>Coordination</h3>
+            <div class="tags">
+              <span class="tag">Event co-organisation</span>
+              <span class="tag">Team collaboration</span>
+              <span class="tag">Editorial production</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h3>Business foundations</h3>
+            <div class="tags">
+              <span class="tag">Entrepreneurship</span>
+              <span class="tag">Branding</span>
+              <span class="tag">Digital marketing</span>
+              <span class="tag">Sustainability</span>
+              <span class="tag">Consumer behaviour</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h3>Digital tools</h3>
+            <div class="tags">
+              <span class="tag">Canva</span>
+              <span class="tag">Presentation design</span>
+              <span class="tag">Visual content creation</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h3>Courses & certifications</h3>
+            <p>
+              BCG Climate & Sustainability Job Simulation — Forage<br />
+              Branding & Design Job Simulation — Forage<br />
+              Consumer Neuroscience & Neuromarketing — Copenhagen Business
+              School<br />
+              Creativity to Entrepreneurship Specialization — University of
+              Illinois<br />
+              AFS STEM Global Accelerator Program
+            </p>
+          </div>
+        </div>
+
+        <br /><br />
+
+        <div class="eyebrow">Languages</div>
+        <p class="lead">English · Hindi · Gujarati · Marwadi (understanding)</p>
+
+        <br />
+
+        <div class="eyebrow">Interests</div>
+        <p class="lead">
+          Entrepreneurship · Football · Biology & chemistry · Singing · Reading
+          · Analytical puzzles
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="dark-section">
+      <div class="container">
+        <div class="eyebrow">06 / Contact</div>
+
+        <h2>Have a good<br />question? Start there.</h2>
+
+        <p class="lead">
+          I'm interested in conversations around ideas, early-stage businesses
+          and opportunities to learn by doing.
+        </p>
+
+        <div class="buttons">
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrkVbcHPLntlCKPnMkhhzTNVRmHfRHbHfsFqnMPgswXrlxpRNrxwljsCzNGHPzNKDXDxQV" class="btn">
+            EMAIL NITHYA ↗
+          </a>
+
+          <a href="./Nithya_Malani_Founders_Office_Resume_Final.docx" target="_blank" class="btn">
+            VIEW RESUME ↗
+          </a>
+        </div>
+
+        <br /><br />
+
+        <p style="color: #b8c8d3; font-size: 14px">nityamalani2812@gmail.com</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-content">
+        <div>
+          <div class="logo">NITHYA MALANI</div>
+          <p>Ideas, people and the work that moves them forward.</p>
+        </div>
+
+        <a href="#home" style="font-size: 12px; letter-spacing: 1px">
+          BACK TO TOP ↑
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
